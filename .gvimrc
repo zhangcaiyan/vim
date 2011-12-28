@@ -1,5 +1,5 @@
 set guioptions-=T " hide toolbar
-set lines=55 columns=100
+set lines=45 columns=120
 
 set guifont=DejaVu\ Sans\ Mono:h13
 
@@ -53,13 +53,22 @@ map <C-S-F> :Grep -r --exclude=*.log<CR>
 "格式化ctrl+shift+g
 map <C-S-G> gg=G<CR>
 
+"粘贴gvim外的内容
+map <C-S-V> "*P<CR>
+
 "快捷键上、下、左、右切换窗口
 map <C-J> <C-W>j<C-W>
 map <C-K> <C-W>k<C-W>
 map <C-H> <C-W>h<C-W>
 map <C-L> <C-W>l<C-W>
 
+"保存快捷键
+map <C-S> :w<CR>
+map <C-S-S> :wa<CR>
 """"""""""""""""""""""""暂时"""""""""""""""""""""
 
+
+set clipboard+=unnamed
+set clipboard+=unnamedplus
 
 

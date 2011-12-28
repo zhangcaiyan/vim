@@ -11,24 +11,6 @@ set history=400
 filetype plugin on
 filetype indent on
 
-"Set to auto read when a file is changed from the outside
-set autoread
-
-"Have the mouse enabled all the time:
-set mouse=a
-
-"Set Tab default
-set ts=2
-
-"When .vimrc is edited, reload it
-autocmd! bufwritepost vimrc source ~/vim_local/vimrc
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Colors and Fonts
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Enable syntax hl
-syntax enable
 
 "Set font to Monaco 10pt
 set gfn=Monospace\ 10
@@ -166,12 +148,12 @@ set fdl=0
 " => Text options
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 
 map <leader>t2 :set shiftwidth=2<cr>
 map <leader>t4 :set shiftwidth=4<cr>
-au FileType html,python,vim,javascript,tex,c,cpp,hpp,h setl shiftwidth=4
-au FileType html,python,vim,javascript,tex,c,cpp,hpp,h setl tabstop=4
+au FileType python,vim,javascript,tex,c,cpp,hpp,h setl shiftwidth=4
+au FileType python,vim,javascript,tex,c,cpp,hpp,h setl tabstop=4
 au FileType java setl shiftwidth=4
 au FileType java setl tabstop=4
 
@@ -211,7 +193,5 @@ set ambiwidth=double
 
 "my configure,F3 F4 switch the tablabel
 map <F2> :tabprevious<CR>
-
-
 
 
